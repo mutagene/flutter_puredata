@@ -116,7 +116,7 @@ public class FlutterpdPlugin(): FlutterPlugin, MethodCallHandler {
       val nullableKey = flutterAssets?.getAssetFilePathByName(patchFile);
       nullableKey?.let { key ->
         Log.w("FlutterPd", "key is $key");
-        val tempFile = File.createTempFile("pd-patch-file", "pd");
+        val tempFile = File.createTempFile("pd-patch-file", ".pd");
         val assetManager = context?.assets
         var inputStream: InputStream? = null
         try {
