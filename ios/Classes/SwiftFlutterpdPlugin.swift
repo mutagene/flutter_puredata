@@ -1,6 +1,6 @@
 import Flutter
 import UIKit
-import libpd
+import libpd_ios
 
 public class SwiftFlutterpdPlugin: NSObject, FlutterPlugin {
   let pdAudioController = PdAudioController()
